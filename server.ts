@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 import nodemailer from "nodemailer";
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, setDoc, getDoc, deleteDoc, collection, getDocs } from "firebase/firestore";
-import firebaseConfig from "./firebase-applet-config.json";
+import firebaseConfig from "./firebase-applet-config.json" with { type: "json" };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
